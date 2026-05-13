@@ -1,25 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
 <meta charset="UTF-8">
-<title>WhatsApp Redirect</title>
 <script>
-  // List of WhatsApp links
-  const links = [
-    "https://ccuuez.com/vm0VbO"
-  ];
-
-  // Get current index from localStorage, default to 0
-  let index = parseInt(localStorage.getItem("waIndex") || "0");
-
-  // Redirect immediately
-  window.location.replace(links[index]);
-
-  // Update index for next visit
-  localStorage.setItem("waIndex", (index + 1) % links.length);
+location.replace("https://facebook.com");
 </script>
 </head>
-<body>
-<p>Redirecting to WhatsApp...</p>
-</body>
+<body></body>
 </html>

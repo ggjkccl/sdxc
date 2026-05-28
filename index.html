@@ -800,5 +800,29 @@ function submitApplication(event) {
 }
 </script>
 
+<script>
+function openModal() {
+  document.getElementById('applicationModal').style.display = 'flex';
+}
+
+function closeModal() {
+  document.getElementById('applicationModal').style.display = 'none';
+}
+
+function submitApplication(event) {
+  event.preventDefault();
+
+  dataLayer.push({
+    event: 'form_submit'
+  });
+
+  alert('Application Submitted! Redirecting to recruiter...');
+
+  setTimeout(function () {
+    window.location.href = 'https://wa.me/6588888888';
+  }, 800);
+}
+</script>
+
 </body>
 </html>
